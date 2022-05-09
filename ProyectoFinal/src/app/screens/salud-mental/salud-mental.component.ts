@@ -13,17 +13,17 @@ export class SaludMentalComponent implements OnInit {
   constructor() {this.tasks = [
     {
       id: 1,
-      name: "Sacar la basura",
+      name: "Como fue mi experiencia en la universidad",
       description: ""
     },
     {
       id: 2,
-      name: "Pasear al perro",
+      name: "Aprendiendo a convivir con ansiedad",
       description: ""
     },
     {
       id: 3,
-      name: "Cortar el pasto",
+      name: "Problemas de salud mental en los jovenes",
       description: ""
     },
   ];

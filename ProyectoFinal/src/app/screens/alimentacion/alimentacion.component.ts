@@ -13,17 +13,17 @@ export class AlimentacionComponent implements OnInit {
   constructor() {this.tasks = [
     {
       id: 1,
-      name: "Sacar la basura",
+      name: "Arroz con pollo",
       description: ""
     },
     {
       id: 2,
-      name: "Pasear al perro",
+      name: "Cazuela",
       description: ""
     },
     {
       id: 3,
-      name: "Cortar el pasto",
+      name: "Tofu",
       description: ""
     },
   ];

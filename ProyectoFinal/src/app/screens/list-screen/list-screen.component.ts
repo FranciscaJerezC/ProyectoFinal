@@ -15,17 +15,17 @@ export class ListScreenComponent implements OnInit {
     this.tasks = [
       {
         id: 1,
-        name: "Sacar la basura",
+        name: "Rutina de Piernas",
         description: ""
       },
       {
         id: 2,
-        name: "Pasear al perro",
+        name: "Rutina de Brazos",
         description: ""
       },
       {
         id: 3,
-        name: "Cortar el pasto",
+        name: "Rutina Fin de Semana",
         description: ""
       },
     ];
