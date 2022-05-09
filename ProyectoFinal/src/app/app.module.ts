@@ -10,6 +10,7 @@ import { HomeScreenComponent } from './screens/home-screen/home-screen.component
 import { ListScreenComponent } from './screens/list-screen/list-screen.component';
 import { ButtonCardComponent } from './components/button-card/button-card.component';
 import { FormsModule } from "@angular/forms";
+import { AlimentacionComponent } from './screens/alimentacion/alimentacion.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from "@angular/forms";
     TitleComponent,
     HomeScreenComponent,
     ListScreenComponent,
-    ButtonCardComponent
+    ButtonCardComponent,
+    AlimentacionComponent
   ],
   imports: [
     BrowserModule,

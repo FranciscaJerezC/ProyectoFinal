@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-8 mt-3">
+        <div class="card">
+          <h5 class="card-header">ALIMENTACION</h5>
+          <div class="list-group">
+            <a class="list-group-item list-group-item-action" aria-current="true"
+              *ngFor="let task of tasks"
+              (click)="selectTask(task)"
+              [ngClass]="{'active': selectedTask === task}"
+            >
+              <p class="">{{task.name}}</p>
+              <small class="text-muted">{{task.description}}</small>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-4 mt-3">
+        <div class="card">
+          <h5 class="card-header">Seleccionar una tarea:</h5>
+          <div class="card-body">
+            <p class="mb-0">Nombre tarea</p>
+            <input [(ngModel)]="taskName" class="my-2" type="text">
+            <p class="mb-0">Descripción</p>
+            <input [(ngModel)]="taskDescription" class="mt-2 mb-4" type="text">
+            
+            <p>Vista previa: {{taskName}}</p>
+            <p class="text-muted">{{taskName}}</p>
+        
+        
+            <div class="d-grid gap-2">
+        
+        
+              <a (click)="addTask(taskName)" class="btn btn-success">Agregar</a>
+              <a (click)="modifiedTask(taskName)" class="btn btn-warning">Modificar</a>
+              <a (click)="deleteTask()" class="btn btn-danger">Eliminar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
