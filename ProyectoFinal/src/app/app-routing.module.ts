@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeScreenComponent } from './screens/home-screen/home-screen.component';
 import { ListScreenComponent } from './screens/list-screen/list-screen.component';
 import { AlimentacionComponent } from './screens/alimentacion/alimentacion.component';
+import { SaludMentalComponent } from './screens/salud-mental/salud-mental.component';
+
 
 
 const routes: Routes = [
@@ -10,6 +12,8 @@ const routes: Routes = [
   { path: 'home', component: HomeScreenComponent },
   { path: 'list', component: ListScreenComponent },
   { path: 'alimentacion', component: AlimentacionComponent },
+  { path: 'salud-mental', component: SaludMentalComponent },
+
 
 ];
 

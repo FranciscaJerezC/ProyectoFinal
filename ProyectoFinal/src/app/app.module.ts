@@ -11,6 +11,7 @@ import { ListScreenComponent } from './screens/list-screen/list-screen.component
 import { ButtonCardComponent } from './components/button-card/button-card.component';
 import { FormsModule } from "@angular/forms";
 import { AlimentacionComponent } from './screens/alimentacion/alimentacion.component';
+import { SaludMentalComponent } from './screens/salud-mental/salud-mental.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AlimentacionComponent } from './screens/alimentacion/alimentacion.compo
     HomeScreenComponent,
     ListScreenComponent,
     ButtonCardComponent,
-    AlimentacionComponent
+    AlimentacionComponent,
+    SaludMentalComponent
   ],
   imports: [
     BrowserModule,
