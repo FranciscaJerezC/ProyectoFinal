@@ -14,7 +14,8 @@ import { FormsModule } from "@angular/forms";
 import { AlimentacionComponent } from './screens/alimentacion/alimentacion.component';
 import { SaludMentalComponent } from './screens/salud-mental/salud-mental.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {FooterComponent} from './components/footer/footer.component'
+import {FooterComponent} from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component'
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {FooterComponent} from './components/footer/footer.component'
     ButtonCardComponent,
     AlimentacionComponent,
     SaludMentalComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent
     
   ],
   imports: [
