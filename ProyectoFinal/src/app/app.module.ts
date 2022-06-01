@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,9 @@ import { ButtonCardComponent } from './components/button-card/button-card.compon
 import { FormsModule } from "@angular/forms";
 import { AlimentacionComponent } from './screens/alimentacion/alimentacion.component';
 import { SaludMentalComponent } from './screens/salud-mental/salud-mental.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {FooterComponent} from './components/footer/footer.component'
+
 
 @NgModule({
   declarations: [
@@ -23,12 +27,16 @@ import { SaludMentalComponent } from './screens/salud-mental/salud-mental.compon
     ListScreenComponent,
     ButtonCardComponent,
     AlimentacionComponent,
-    SaludMentalComponent
+    SaludMentalComponent,
+    FooterComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,8 @@
+.navbar-dark .navbar-nav .nav-link
+{
+    color: #2a9d8f;
+}
+.navbar-dark .navbar-nav .nav-link.active-link
+{
+    color: #e9c46a;
+}

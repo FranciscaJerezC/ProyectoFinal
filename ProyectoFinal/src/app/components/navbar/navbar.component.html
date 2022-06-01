@@ -1,38 +1,45 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">HealthyLife</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarColor01">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
+      <!-- Ms-auto mueve la navbar a la derecha automaticamente -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <!-- RouterLinkActiveOption ayuda a determinar si el router está activo, esto con el fin de que no quede marcado home siempre con la configuración del css -->
         <li class="nav-item">
           <a class="nav-link"
             [routerLink]="['/home']"  
+            routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}"
           >Inicio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link"
             [routerLink]="['/list']"  
+            routerLinkActive="active-link"
           >Actividad Física</a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link"
             [routerLink]="['/alimentacion']"  
+            routerLinkActive="active-link"
           >Alimentación</a>
         </li>
         
         <li class="nav-item">
           <a class="nav-link"
             [routerLink]="['/salud-mental']"  
+            routerLinkActive="active-link"
           >Salud Mental</a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link"
-            [routerLink]="['/home']"  
+            [routerLink]="['/Login']"  
+            routerLinkActive="active-link"
           >Login</a>
         </li>
         

@@ -1,0 +1,18 @@
+*
+{
+    padding: 0;
+    margin: 0;
+
+}
+:root
+{
+    --primary-color:#cdb4db;
+    --secondary-color:#ffc8dd;
+
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
