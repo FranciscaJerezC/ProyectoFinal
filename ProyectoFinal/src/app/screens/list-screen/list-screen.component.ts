@@ -1,11 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Rutina } from '/franc/Documents/GitHub/ProyectoFinal/ProyectoFinal/src/app/models/rutina'
+
+
 @Component({
   selector: 'app-list-screen',
   templateUrl: './list-screen.component.html',
   styleUrls: ['./list-screen.component.css']
 })
 export class ListScreenComponent implements OnInit {
+  rutinaArray: Rutina[] = [
+    {id: 1, nombre: "Salto en Cuerda", descripcion: "Consiste en saltar la cuerda por 10 min"},
+    {id: 1, nombre: "Trote", descripcion: "Trote por la playa por 40 min"},
+    {id: 1, nombre: "Yoga", descripcion: "Rutina de Yoga llamada yoga101"},
+
+  ];
   public taskName: string = '';
   public taskDescription: string = '';
   public tasks: any[] = [];

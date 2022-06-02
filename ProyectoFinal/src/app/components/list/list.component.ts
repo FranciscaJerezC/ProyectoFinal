@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Person } from 'src/app/models/person.model';
 
 @Component({
   selector: 'app-list',
