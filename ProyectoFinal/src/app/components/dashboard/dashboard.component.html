@@ -1,0 +1,62 @@
+<nav class="app-navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h1 style="color:aliceblue;">Dashboard</h1>
+        <div class="d-flex">
+            <button (click)="clickAddUsuario()" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success">Agregar Usuario</button>
+        </div>
+    </div>
+</nav>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th scope="col">Usuario ID</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Contraseña</th>
+            <th scope="col">Accion</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of usuarioData">
+          <td>{{row.id}}</td>
+          <td>{{row.email}}</td>
+          <td>{{row.password}}</td>
+
+            <td>
+                <button (click)="onEdit(row)" style="color:aliceblue;" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info">Editar</button>
+                <button (click)="deleteUsuario(row)" class="btn btn-danger mx-3">Eliminar</button>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Detalle suarios</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formValue">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1">
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" *ngIf="showAdd"  (click)="postUsuarioDetails()"  class="btn btn-primary">Agregar</button>
+          <button type="button" *ngIf="showUpdate" (click)="updateUsuarioDetails()"  class="btn btn-primary">Actualizar</button>
+        </div>
+      </div>
+    </div>
+  </div>
