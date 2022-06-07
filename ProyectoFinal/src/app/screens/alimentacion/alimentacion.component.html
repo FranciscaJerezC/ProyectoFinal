@@ -1,43 +1,499 @@
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-8 mt-3">
-        <div class="card">
-          <h5 class="card-header">Alimentación</h5>
-          <div class="list-group">
-            <a class="list-group-item list-group-item-action" aria-current="true"
-              *ngFor="let task of tasks"
-              (click)="selectTask(task)"
-              [ngClass]="{'active': selectedTask === task}"
-            >
-              <p class="">{{task.name}}</p>
-              <small class="text-muted">{{task.description}}</small>
-            </a>
+<div class="parallax">
+  <ul>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+          </svg>
+          <label class="subtitulo">LASAÑA DE ALCACHOFAS Y RICOTTA        </label><br>
+          <div class="caja">
+              <img class="imagen" src="https://www.midiariodecocina.com/wp-content/uploads/2022/04/Lasan%CC%83a-de-alcachofa-y-ricotta04-320x320.jpg">
+              <div class="texto">
+                  <div class="contenedor">
+                      <span class="tituloD">Tiempo Total: </span>
+                      <span class="descripcion">40 minutos</span>
+                  </div>
+                  
+                  <div class="contenedor">
+                      <span class="tituloD">Ingredientes:</span>
+                      <span class="descripcion">
+                        <ol >
+                            <li>- 1 paquete de pasta de lasaña precocida</li>
+                            <li>- Aceite en spray o algún tipo de materia grasa</li>
+                            <li>- 2 tazas de salsa de tomate</li>
+                            <li>- 350 gr ricotta</li>
+                            <li>- 300 gr de fondos de alcachofas</li>
+                            <li>- Sal a gusto</li>
+                            <li>- Pimienta a gusto</li>
+                            <li>- 1/2 cucharadita de ralladura de limón</li>
+                            <li>- Queso parmesano a gusto</li>
+                        </ol>  
+                        
+                        </span>
+                  </div>
+
+
+
+                  <div class="contenedor">
+                    <span class="tituloD">Instrucciones:</span>
+                    <div class="contenedor">
+                      <span class="descripcion">
+                        <ol >
+                            <li>- Sino no cuenta con estas minis cocottes, puede usar una fuente que pueda ir al horno.</li>
+                            <li>- Engrasar con aceite en spray o mantequilla la fuente o las minis cocottes.</li>
+                            <li>- Colocar en la base un poco de salsa de tomates, luego una capa de láminas de lasaña.</li>
+                            <li>- Encima cubrir con ricotta, previamente sazonada con sal, pimienta y ralladura de limón.</li>
+                            <li>- Luego una capa de pasta, enseguida de salsa de tomates y alcachofas encima cortadas en forma irregular.</li>
+                            <li>- Luego nuevamente colocar una capa de pasta, ricotta, pasta, salsa de tomates, alcachofas y pasta.</li>
+                            <li>- Si les alcalza para otras capas más pueden seguir sino</li>
+                            <li>- Cubrir encima con salsa de tomates.</li>
+                            <li>- Llevar al horno precalentado a 375°F (190°C ) por 25 minutos.</li>
+                            <li>- Una vez lista servir encima con un poco de pesto si es que tienen y queso parmesano.</li>
+                        </ol>  
+                        
+                        </span>
+                  </div>
+                </div>
+
+
+
+              </div>
           </div>
-        </div>
-      </div>
-  
-      <div class="col-4 mt-3">
-        <div class="card">
-          <h5 class="card-header">Agregue una receta:</h5>
-          <div class="card-body">
-            <p class="mb-0">Nombre receta</p>
-            <input [(ngModel)]="taskName" class="my-2" type="text">
-            <p class="mb-0">Ingredientes</p>
-            <input [(ngModel)]="taskDescription" class="mt-2 mb-4" type="text">
-            
-            <p>Vista previa: {{taskName}}</p>
-            <p class="text-muted">{{taskName}}</p>
-        
-        
-            <div class="d-grid gap-2">
-        
-        
-              <a (click)="addTask(taskName)" class="btn btn-success">Agregar</a>
-              <a (click)="modifiedTask(taskName)" class="btn btn-warning">Modificar</a>
-              <a (click)="deleteTask()" class="btn btn-danger">Eliminar</a>
-            </div>
+      </li>
+
+      
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+          </svg>
+          <label class="subtitulo">LASAÑA DE ALCACHOFAS Y RICOTTA        </label><br>
+          <div class="caja">
+              <img class="imagen" src="https://www.midiariodecocina.com/wp-content/uploads/2022/04/Lasan%CC%83a-de-alcachofa-y-ricotta04-320x320.jpg">
+              <div class="texto">
+                  <div class="contenedor">
+                      <span class="tituloD">Tiempo Total: </span>
+                      <span class="descripcion">40 minutos</span>
+                  </div>
+                  
+                  <div class="contenedor">
+                      <span class="tituloD">Ingredientes:</span>
+                      <span class="descripcion">
+                        <ol >
+                            <li>- 1 paquete de pasta de lasaña precocida</li>
+                            <li>- Aceite en spray o algún tipo de materia grasa</li>
+                            <li>- 2 tazas de salsa de tomate</li>
+                            <li>- 350 gr ricotta</li>
+                            <li>- 300 gr de fondos de alcachofas</li>
+                            <li>- Sal a gusto</li>
+                            <li>- Pimienta a gusto</li>
+                            <li>- 1/2 cucharadita de ralladura de limón</li>
+                            <li>- Queso parmesano a gusto</li>
+                        </ol>  
+                        
+                        </span>
+                  </div>
+
+
+
+                  <div class="contenedor">
+                    <span class="tituloD">Instrucciones:</span>
+                    <div class="contenedor">
+                      <span class="descripcion">
+                        <ol >
+                            <li>- Sino no cuenta con estas minis cocottes, puede usar una fuente que pueda ir al horno.</li>
+                            <li>- Engrasar con aceite en spray o mantequilla la fuente o las minis cocottes.</li>
+                            <li>- Colocar en la base un poco de salsa de tomates, luego una capa de láminas de lasaña.</li>
+                            <li>- Encima cubrir con ricotta, previamente sazonada con sal, pimienta y ralladura de limón.</li>
+                            <li>- Luego una capa de pasta, enseguida de salsa de tomates y alcachofas encima cortadas en forma irregular.</li>
+                            <li>- Luego nuevamente colocar una capa de pasta, ricotta, pasta, salsa de tomates, alcachofas y pasta.</li>
+                            <li>- Si les alcalza para otras capas más pueden seguir sino</li>
+                            <li>- Cubrir encima con salsa de tomates.</li>
+                            <li>- Llevar al horno precalentado a 375°F (190°C ) por 25 minutos.</li>
+                            <li>- Una vez lista servir encima con un poco de pesto si es que tienen y queso parmesano.</li>
+                        </ol>  
+                        
+                        </span>
+                  </div>
+                </div>
+
+
+
+              </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
+      </li>
+
+
+       <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+          </svg>
+          <label class="subtitulo">LASAÑA DE ALCACHOFAS Y RICOTTA        </label><br>
+          <div class="caja">
+              <img class="imagen" src="https://www.midiariodecocina.com/wp-content/uploads/2022/04/Lasan%CC%83a-de-alcachofa-y-ricotta04-320x320.jpg">
+              <div class="texto">
+                  <div class="contenedor">
+                      <span class="tituloD">Tiempo Total: </span>
+                      <span class="descripcion">40 minutos</span>
+                  </div>
+                  
+                  <div class="contenedor">
+                      <span class="tituloD">Ingredientes:</span>
+                      <span class="descripcion">
+                        <ol >
+                            <li>- 1 paquete de pasta de lasaña precocida</li>
+                            <li>- Aceite en spray o algún tipo de materia grasa</li>
+                            <li>- 2 tazas de salsa de tomate</li>
+                            <li>- 350 gr ricotta</li>
+                            <li>- 300 gr de fondos de alcachofas</li>
+                            <li>- Sal a gusto</li>
+                            <li>- Pimienta a gusto</li>
+                            <li>- 1/2 cucharadita de ralladura de limón</li>
+                            <li>- Queso parmesano a gusto</li>
+                        </ol>  
+                        
+                        </span>
+                  </div>
+
+
+
+                  <div class="contenedor">
+                    <span class="tituloD">Instrucciones:</span>
+                    <div class="contenedor">
+                      <span class="descripcion">
+                        <ol >
+                            <li>- Sino no cuenta con estas minis cocottes, puede usar una fuente que pueda ir al horno.</li>
+                            <li>- Engrasar con aceite en spray o mantequilla la fuente o las minis cocottes.</li>
+                            <li>- Colocar en la base un poco de salsa de tomates, luego una capa de láminas de lasaña.</li>
+                            <li>- Encima cubrir con ricotta, previamente sazonada con sal, pimienta y ralladura de limón.</li>
+                            <li>- Luego una capa de pasta, enseguida de salsa de tomates y alcachofas encima cortadas en forma irregular.</li>
+                            <li>- Luego nuevamente colocar una capa de pasta, ricotta, pasta, salsa de tomates, alcachofas y pasta.</li>
+                            <li>- Si les alcalza para otras capas más pueden seguir sino</li>
+                            <li>- Cubrir encima con salsa de tomates.</li>
+                            <li>- Llevar al horno precalentado a 375°F (190°C ) por 25 minutos.</li>
+                            <li>- Una vez lista servir encima con un poco de pesto si es que tienen y queso parmesano.</li>
+                        </ol>  
+                        
+                        </span>
+                  </div>
+                </div>
+
+
+
+              </div>
+          </div>
+      </li>
+
+
+       <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+          </svg>
+          <label class="subtitulo">LASAÑA DE ALCACHOFAS Y RICOTTA        </label><br>
+          <div class="caja">
+              <img class="imagen" src="https://www.midiariodecocina.com/wp-content/uploads/2022/04/Lasan%CC%83a-de-alcachofa-y-ricotta04-320x320.jpg">
+              <div class="texto">
+                  <div class="contenedor">
+                      <span class="tituloD">Tiempo Total: </span>
+                      <span class="descripcion">40 minutos</span>
+                  </div>
+                  
+                  <div class="contenedor">
+                      <span class="tituloD">Ingredientes:</span>
+                      <span class="descripcion">
+                        <ol >
+                            <li>- 1 paquete de pasta de lasaña precocida</li>
+                            <li>- Aceite en spray o algún tipo de materia grasa</li>
+                            <li>- 2 tazas de salsa de tomate</li>
+                            <li>- 350 gr ricotta</li>
+                            <li>- 300 gr de fondos de alcachofas</li>
+                            <li>- Sal a gusto</li>
+                            <li>- Pimienta a gusto</li>
+                            <li>- 1/2 cucharadita de ralladura de limón</li>
+                            <li>- Queso parmesano a gusto</li>
+                        </ol>  
+                        
+                        </span>
+                  </div>
+
+
+
+                  <div class="contenedor">
+                    <span class="tituloD">Instrucciones:</span>
+                    <div class="contenedor">
+                      <span class="descripcion">
+                        <ol >
+                            <li>- Sino no cuenta con estas minis cocottes, puede usar una fuente que pueda ir al horno.</li>
+                            <li>- Engrasar con aceite en spray o mantequilla la fuente o las minis cocottes.</li>
+                            <li>- Colocar en la base un poco de salsa de tomates, luego una capa de láminas de lasaña.</li>
+                            <li>- Encima cubrir con ricotta, previamente sazonada con sal, pimienta y ralladura de limón.</li>
+                            <li>- Luego una capa de pasta, enseguida de salsa de tomates y alcachofas encima cortadas en forma irregular.</li>
+                            <li>- Luego nuevamente colocar una capa de pasta, ricotta, pasta, salsa de tomates, alcachofas y pasta.</li>
+                            <li>- Si les alcalza para otras capas más pueden seguir sino</li>
+                            <li>- Cubrir encima con salsa de tomates.</li>
+                            <li>- Llevar al horno precalentado a 375°F (190°C ) por 25 minutos.</li>
+                            <li>- Una vez lista servir encima con un poco de pesto si es que tienen y queso parmesano.</li>
+                        </ol>  
+                        
+                        </span>
+                  </div>
+                </div>
+
+
+
+              </div>
+          </div>
+      </li>
+
+
+       <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+          </svg>
+          <label class="subtitulo">LASAÑA DE ALCACHOFAS Y RICOTTA        </label><br>
+          <div class="caja">
+              <img class="imagen" src="https://www.midiariodecocina.com/wp-content/uploads/2022/04/Lasan%CC%83a-de-alcachofa-y-ricotta04-320x320.jpg">
+              <div class="texto">
+                  <div class="contenedor">
+                      <span class="tituloD">Tiempo Total: </span>
+                      <span class="descripcion">40 minutos</span>
+                  </div>
+                  
+                  <div class="contenedor">
+                      <span class="tituloD">Ingredientes:</span>
+                      <span class="descripcion">
+                        <ol >
+                            <li>- 1 paquete de pasta de lasaña precocida</li>
+                            <li>- Aceite en spray o algún tipo de materia grasa</li>
+                            <li>- 2 tazas de salsa de tomate</li>
+                            <li>- 350 gr ricotta</li>
+                            <li>- 300 gr de fondos de alcachofas</li>
+                            <li>- Sal a gusto</li>
+                            <li>- Pimienta a gusto</li>
+                            <li>- 1/2 cucharadita de ralladura de limón</li>
+                            <li>- Queso parmesano a gusto</li>
+                        </ol>  
+                        
+                        </span>
+                  </div>
+
+
+
+                  <div class="contenedor">
+                    <span class="tituloD">Instrucciones:</span>
+                    <div class="contenedor">
+                      <span class="descripcion">
+                        <ol >
+                            <li>- Sino no cuenta con estas minis cocottes, puede usar una fuente que pueda ir al horno.</li>
+                            <li>- Engrasar con aceite en spray o mantequilla la fuente o las minis cocottes.</li>
+                            <li>- Colocar en la base un poco de salsa de tomates, luego una capa de láminas de lasaña.</li>
+                            <li>- Encima cubrir con ricotta, previamente sazonada con sal, pimienta y ralladura de limón.</li>
+                            <li>- Luego una capa de pasta, enseguida de salsa de tomates y alcachofas encima cortadas en forma irregular.</li>
+                            <li>- Luego nuevamente colocar una capa de pasta, ricotta, pasta, salsa de tomates, alcachofas y pasta.</li>
+                            <li>- Si les alcalza para otras capas más pueden seguir sino</li>
+                            <li>- Cubrir encima con salsa de tomates.</li>
+                            <li>- Llevar al horno precalentado a 375°F (190°C ) por 25 minutos.</li>
+                            <li>- Una vez lista servir encima con un poco de pesto si es que tienen y queso parmesano.</li>
+                        </ol>  
+                        
+                        </span>
+                  </div>
+                </div>
+
+
+
+              </div>
+          </div>
+      </li>
+
+
+       <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+          </svg>
+          <label class="subtitulo">LASAÑA DE ALCACHOFAS Y RICOTTA        </label><br>
+          <div class="caja">
+              <img class="imagen" src="https://www.midiariodecocina.com/wp-content/uploads/2022/04/Lasan%CC%83a-de-alcachofa-y-ricotta04-320x320.jpg">
+              <div class="texto">
+                  <div class="contenedor">
+                      <span class="tituloD">Tiempo Total: </span>
+                      <span class="descripcion">40 minutos</span>
+                  </div>
+                  
+                  <div class="contenedor">
+                      <span class="tituloD">Ingredientes:</span>
+                      <span class="descripcion">
+                        <ol >
+                            <li>- 1 paquete de pasta de lasaña precocida</li>
+                            <li>- Aceite en spray o algún tipo de materia grasa</li>
+                            <li>- 2 tazas de salsa de tomate</li>
+                            <li>- 350 gr ricotta</li>
+                            <li>- 300 gr de fondos de alcachofas</li>
+                            <li>- Sal a gusto</li>
+                            <li>- Pimienta a gusto</li>
+                            <li>- 1/2 cucharadita de ralladura de limón</li>
+                            <li>- Queso parmesano a gusto</li>
+                        </ol>  
+                        
+                        </span>
+                  </div>
+
+
+
+                  <div class="contenedor">
+                    <span class="tituloD">Instrucciones:</span>
+                    <div class="contenedor">
+                      <span class="descripcion">
+                        <ol >
+                            <li>- Sino no cuenta con estas minis cocottes, puede usar una fuente que pueda ir al horno.</li>
+                            <li>- Engrasar con aceite en spray o mantequilla la fuente o las minis cocottes.</li>
+                            <li>- Colocar en la base un poco de salsa de tomates, luego una capa de láminas de lasaña.</li>
+                            <li>- Encima cubrir con ricotta, previamente sazonada con sal, pimienta y ralladura de limón.</li>
+                            <li>- Luego una capa de pasta, enseguida de salsa de tomates y alcachofas encima cortadas en forma irregular.</li>
+                            <li>- Luego nuevamente colocar una capa de pasta, ricotta, pasta, salsa de tomates, alcachofas y pasta.</li>
+                            <li>- Si les alcalza para otras capas más pueden seguir sino</li>
+                            <li>- Cubrir encima con salsa de tomates.</li>
+                            <li>- Llevar al horno precalentado a 375°F (190°C ) por 25 minutos.</li>
+                            <li>- Una vez lista servir encima con un poco de pesto si es que tienen y queso parmesano.</li>
+                        </ol>  
+                        
+                        </span>
+                  </div>
+                </div>
+
+
+
+              </div>
+          </div>
+      </li>
+
+
+       <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+          </svg>
+          <label class="subtitulo">LASAÑA DE ALCACHOFAS Y RICOTTA        </label><br>
+          <div class="caja">
+              <img class="imagen" src="https://www.midiariodecocina.com/wp-content/uploads/2022/04/Lasan%CC%83a-de-alcachofa-y-ricotta04-320x320.jpg">
+              <div class="texto">
+                  <div class="contenedor">
+                      <span class="tituloD">Tiempo Total: </span>
+                      <span class="descripcion">40 minutos</span>
+                  </div>
+                  
+                  <div class="contenedor">
+                      <span class="tituloD">Ingredientes:</span>
+                      <span class="descripcion">
+                        <ol >
+                            <li>- 1 paquete de pasta de lasaña precocida</li>
+                            <li>- Aceite en spray o algún tipo de materia grasa</li>
+                            <li>- 2 tazas de salsa de tomate</li>
+                            <li>- 350 gr ricotta</li>
+                            <li>- 300 gr de fondos de alcachofas</li>
+                            <li>- Sal a gusto</li>
+                            <li>- Pimienta a gusto</li>
+                            <li>- 1/2 cucharadita de ralladura de limón</li>
+                            <li>- Queso parmesano a gusto</li>
+                        </ol>  
+                        
+                        </span>
+                  </div>
+
+
+
+                  <div class="contenedor">
+                    <span class="tituloD">Instrucciones:</span>
+                    <div class="contenedor">
+                      <span class="descripcion">
+                        <ol >
+                            <li>- Sino no cuenta con estas minis cocottes, puede usar una fuente que pueda ir al horno.</li>
+                            <li>- Engrasar con aceite en spray o mantequilla la fuente o las minis cocottes.</li>
+                            <li>- Colocar en la base un poco de salsa de tomates, luego una capa de láminas de lasaña.</li>
+                            <li>- Encima cubrir con ricotta, previamente sazonada con sal, pimienta y ralladura de limón.</li>
+                            <li>- Luego una capa de pasta, enseguida de salsa de tomates y alcachofas encima cortadas en forma irregular.</li>
+                            <li>- Luego nuevamente colocar una capa de pasta, ricotta, pasta, salsa de tomates, alcachofas y pasta.</li>
+                            <li>- Si les alcalza para otras capas más pueden seguir sino</li>
+                            <li>- Cubrir encima con salsa de tomates.</li>
+                            <li>- Llevar al horno precalentado a 375°F (190°C ) por 25 minutos.</li>
+                            <li>- Una vez lista servir encima con un poco de pesto si es que tienen y queso parmesano.</li>
+                        </ol>  
+                        
+                        </span>
+                  </div>
+                </div>
+
+
+
+              </div>
+          </div>
+      </li>
+
+
+       <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+            <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+          </svg>
+          <label class="subtitulo">LASAÑA DE ALCACHOFAS Y RICOTTA        </label><br>
+          <div class="caja">
+              <img class="imagen" src="https://www.midiariodecocina.com/wp-content/uploads/2022/04/Lasan%CC%83a-de-alcachofa-y-ricotta04-320x320.jpg">
+              <div class="texto">
+                  <div class="contenedor">
+                      <span class="tituloD">Tiempo Total: </span>
+                      <span class="descripcion">40 minutos</span>
+                  </div>
+                  
+                  <div class="contenedor">
+                      <span class="tituloD">Ingredientes:</span>
+                      <span class="descripcion">
+                        <ol >
+                            <li>- 1 paquete de pasta de lasaña precocida</li>
+                            <li>- Aceite en spray o algún tipo de materia grasa</li>
+                            <li>- 2 tazas de salsa de tomate</li>
+                            <li>- 350 gr ricotta</li>
+                            <li>- 300 gr de fondos de alcachofas</li>
+                            <li>- Sal a gusto</li>
+                            <li>- Pimienta a gusto</li>
+                            <li>- 1/2 cucharadita de ralladura de limón</li>
+                            <li>- Queso parmesano a gusto</li>
+                        </ol>  
+                        
+                        </span>
+                  </div>
+
+
+
+                  <div class="contenedor">
+                    <span class="tituloD">Instrucciones:</span>
+                    <div class="contenedor">
+                      <span class="descripcion">
+                        <ol >
+                            <li>- Sino no cuenta con estas minis cocottes, puede usar una fuente que pueda ir al horno.</li>
+                            <li>- Engrasar con aceite en spray o mantequilla la fuente o las minis cocottes.</li>
+                            <li>- Colocar en la base un poco de salsa de tomates, luego una capa de láminas de lasaña.</li>
+                            <li>- Encima cubrir con ricotta, previamente sazonada con sal, pimienta y ralladura de limón.</li>
+                            <li>- Luego una capa de pasta, enseguida de salsa de tomates y alcachofas encima cortadas en forma irregular.</li>
+                            <li>- Luego nuevamente colocar una capa de pasta, ricotta, pasta, salsa de tomates, alcachofas y pasta.</li>
+                            <li>- Si les alcalza para otras capas más pueden seguir sino</li>
+                            <li>- Cubrir encima con salsa de tomates.</li>
+                            <li>- Llevar al horno precalentado a 375°F (190°C ) por 25 minutos.</li>
+                            <li>- Una vez lista servir encima con un poco de pesto si es que tienen y queso parmesano.</li>
+                        </ol>  
+                        
+                        </span>
+                  </div>
+                </div>
+
+
+
+              </div>
+          </div>
+      </li>
+      
+  </ul>
+</div>
