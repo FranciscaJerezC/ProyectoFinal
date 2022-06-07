@@ -1,43 +1,38 @@
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-8 mt-3">
-        <div class="card">
-          <h5 class="card-header">Salud Mental</h5>
-          <div class="list-group">
-            <a class="list-group-item list-group-item-action" aria-current="true"
-              *ngFor="let task of tasks"
-              (click)="selectTask(task)"
-              [ngClass]="{'active': selectedTask === task}"
-            >
-              <p class="">{{task.name}}</p>
-              <small class="text-muted">{{task.description}}</small>
-            </a>
-          </div>
+<section class="blog container">
+  <div class="row">
+    <div class="post col-lg-8 col-md-8 col-12">
+      <div class="row">
+        <div class="post1 col-lg-6 col-md-6 col-12">
+          <img class="img-fluid pb-3" src="https://images.unsplash.com/photo-1477332552946-cfb384aeaf1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+          <h3>Mejores maneras de despertar</h3>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
         </div>
-      </div>
-  
-      <div class="col-4 mt-3">
-        <div class="card">
-          <h5 class="card-header">Ingrese su experiencia:</h5>
-          <div class="card-body">
-            <p class="mb-0">Título de entrada blog</p>
-            <input [(ngModel)]="taskName" class="my-2" type="text">
-            <p class="mb-0">Cuerpo del texto</p>
-            <input [(ngModel)]="taskDescription" class="mt-2 mb-4" type="text">
-            
-            <p>Vista previa: {{taskName}}</p>
-            <p class="text-muted">{{taskName}}</p>
-        
-        
-            <div class="d-grid gap-2">
-        
-        
-              <a (click)="addTask(taskName)" class="btn btn-success">Agregar</a>
-              <a (click)="modifiedTask(taskName)" class="btn btn-warning">Modificar</a>
-              <a (click)="deleteTask()" class="btn btn-danger">Eliminar</a>
-            </div>
-          </div>
+
+        <div class="post1 col-lg-6 col-md-6 col-12">
+          <img class="img-fluid pb-3" src="https://images.unsplash.com/photo-1581578017426-04fbc2b0511e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+          <h3>Las ventajas de la compañia</h3>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
         </div>
+
+        <div class="post1 col-lg-6 col-md-6 col-12">
+          <img class="img-fluid pb-3" src="https://images.unsplash.com/photo-1579600161224-cac5a2971069?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="">
+          <h3>Centros de ayuda en tu ciudad</h3>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+        </div>
+
+
+        <div class="post1 col-lg-6 col-md-6 col-12">
+          <img class="img-fluid pb-3" src="https://images.unsplash.com/photo-1621887348744-6b0444f8a058?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+          <h3>Información y apoyo</h3>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+        </div>
+
+
+
       </div>
     </div>
+    <div class="sidebar col-lg-4 col-md-4 col-12">
+
+    </div>
   </div>
+</section>

@@ -11,21 +11,7 @@ export class SaludMentalComponent implements OnInit {
   public tasks: any[] = [];
   public selectedTask: any;
   constructor() {this.tasks = [
-    {
-      id: 1,
-      name: "Como fue mi experiencia en la universidad",
-      description: ""
-    },
-    {
-      id: 2,
-      name: "Aprendiendo a convivir con ansiedad",
-      description: ""
-    },
-    {
-      id: 3,
-      name: "Problemas de salud mental en los jovenes",
-      description: ""
-    },
+
   ];
   this.selectedTask = null; }
 
