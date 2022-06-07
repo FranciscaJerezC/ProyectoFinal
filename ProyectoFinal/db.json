@@ -4,13 +4,38 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "id": 2,
+      "email": "franciscajerezcerda@gmail.com",
+      "password": "123123123"
     }
   ],
-  "comments": [
+  "registerUsuarios": [
     {
       "id": 1,
       "body": "some comment",
       "postId": 1
+    },
+    {
+      "email": "patuleco@gmail.com",
+      "password": "patuleco",
+      "id": 2
+    },
+    {
+      "email": "franciscajerezcerda@gmail.com",
+      "password": "prueba123",
+      "id": 3
+    },
+    {
+      "email": "franciscajerezcerda@gmail.com",
+      "password": "prueba",
+      "id": 4
+    },
+    {
+      "email": "prueba123@gmail.com",
+      "password": "123",
+      "id": 5
     }
   ],
   "profile": {

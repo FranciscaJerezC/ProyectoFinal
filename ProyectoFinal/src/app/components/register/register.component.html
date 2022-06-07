@@ -1,1 +1,25 @@
-<p>register works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Registro</h1>
+                    <h4>Ingrese email y contraseña con la cual desea registrarse</h4>
+                </div>
+                    <form [formGroup]="registerForm" (ngSubmit)="register()">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Dirección de correo</label>
+                          <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">contraseña</label>
+                          <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary mb-2">Registrarse</button>
+                      </form>
+                      <a style="color: #ffff; margin-top:10px"     routerLink="/login">Ya estas registrado? Presione para logearse</a>
+            </div>
+        </div>
+    </div>
+</div>

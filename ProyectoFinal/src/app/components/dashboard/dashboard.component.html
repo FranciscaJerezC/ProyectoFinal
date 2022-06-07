@@ -3,6 +3,7 @@
         <h1 style="color:aliceblue;">Dashboard</h1>
         <div class="d-flex">
             <button (click)="clickAddUsuario()" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success">Agregar Usuario</button>
+            <button routerLink="/login" class="btn btn-danger mx-2">Logout</button>
         </div>
     </div>
 </nav>
@@ -37,7 +38,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Detalle suarios</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Detalle usuarios</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
