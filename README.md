@@ -11,9 +11,9 @@ Proyecto con bootstrap/angular
 
 Moverse con "cd" a carpeta "ProyectoFinal"
 
-json-server --watch db.json         PARA INICIAR SERVER JSON
-
 npm install         PARA INSTALAR DEPENDENCIAS NECESARIAS
+
+json-server --watch db.json         PARA INICIAR SERVER JSON
 
 ng serve --port 4000 --open        PARA ABRIR PROYECTO FRONTEND EN EL NAVEGADOR
 
