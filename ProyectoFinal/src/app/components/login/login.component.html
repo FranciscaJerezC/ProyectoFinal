@@ -6,7 +6,6 @@
                     <h1>Login</h1>
                     <h4>Ingrese email y contraseña</h4>
                 </div>
-                    <form [formGroup]="loginForm" (ngSubmit)="login()">
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">Dirección de correo</label>
                           <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -17,7 +16,6 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary mb-2">Login</button>
-                    </form>
                     <a style="color: #ffff; margin-top:10px"   routerLink="/register">Nuevo Usuario? Presione para registrarse</a>
             </div>
         </div>

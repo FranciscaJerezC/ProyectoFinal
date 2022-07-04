@@ -1,0 +1,1 @@
+insert into usuarios (rut,nombres, apellidos,correo,contrasena,pregunta,respuesta)values ('8227281-1','Cirilla Fiona ', 'Elen Riannon ', 'golondrina@gmail.com','leoncilla','¿nombre de mascota?','roachi');

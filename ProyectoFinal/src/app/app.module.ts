@@ -19,6 +19,8 @@ import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component'
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './components/register/register.component';
+import { AgregarComponent } from './components/agregar/agregar.component';
+import { ModificarComponent } from './components/modificar/modificar.component';
 
 
 @NgModule({
@@ -35,7 +37,9 @@ import { RegisterComponent } from './components/register/register.component';
     FooterComponent,
     LoginComponent,
     DashboardComponent,
-    RegisterComponent
+    RegisterComponent,
+    AgregarComponent,
+    ModificarComponent
     
   ],
   imports: [
