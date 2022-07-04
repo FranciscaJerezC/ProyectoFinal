@@ -22,9 +22,16 @@ para ver los registros guardados en bd ir a localhost/4200/api
 
 
 ALGUNOS DATOS PARA INSERTAR EN TABLA USUARIOS
+
 insert into usuarios (rut,nombres, apellidos,correo,contrasena,pregunta,respuesta)values ('20358212-1','Triss ', 'Merigold ', 'thewitcher@gmail.com','333','¿nombre de mascota?','roach');
+
+
 insert into usuarios (rut,nombres, apellidos,correo,contrasena,pregunta,respuesta)values ('9731343-1','Erika Caronia', 'Cerda Perez', 'erikacercaperez@gmail.com','contrasenita','¿nombre de mascota?','triss');
+
+
 insert into usuarios (rut,nombres, apellidos,correo,contrasena,pregunta,respuesta)values ('20358212-1','Triss ', 'Merigold ', 'thewitcher@gmail.com','333','¿nombre de mascota?','roach');
+
+
 Proyecto con bootstrap/angular/nodejs/mysql
 
 Moverse con "cd" a carpeta "ProyectoFinal"
